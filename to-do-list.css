@@ -1,0 +1,74 @@
+* {
+  font-family:'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: #159fff;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.todo-container {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  user-select: none;
+}
+
+ul li:nth-child(odd) {
+  background-color: #a7a7a7;
+}
+
+ul li:nth-child(even) {
+  background-color: #7a7a7a;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.close-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 25px;
+  height: 30px;
+}
+
+.close-btn:hover {
+  background-color: white;
+  color: red;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 65%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+/* Style the "Tambah" button */
+button {
+  padding: 8px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+}
+
+button:hover {
+  background: #555;
+  color: #d9d9d9;
+  transition: .5s;
+}
